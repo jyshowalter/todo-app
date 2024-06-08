@@ -19,10 +19,11 @@ module.exports = {
     }
   },
   createTodo: async (req, res) => {
+    console.log(req.body);
     try {
       await Todo.create({
         todo: req.body.todoItem,
-        date: req.body.date,
+        date: req.body.dueDate,
         completed: false,
         userId: req.user.id,
       });
