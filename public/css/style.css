@@ -1,10 +1,34 @@
-h1{
-    color: red;
+.completed {
+  text-decoration: line-through;
+  color: gray;
 }
-.completed{
-    text-decoration: line-through;
-    color: gray;
+.not {
+  text-decoration: underline;
 }
-.not{
-    text-decoration: underline;
+
+/* INTRO PAGE */
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 25vh 0;
+  margin: 10vh 10vh;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: 25vh;
+  margin: 0 5vh;
 }
